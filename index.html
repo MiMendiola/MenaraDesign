@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menara Diseño</title>
+    <link rel="shortcut icon" href="./assets/img/LogoMenara.png">
+
+    <!-- Here we have the angular scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+    <!-- Link to the modals -->
+    <link rel="stylesheet" href="./assets/node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
+
+    <!-- Here we have the jquery scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+     <!-- style -->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body ng-app="Menara_App">
+    <header class="header">
+        <div class="container">
+
+            <div class="col-div-3 homeLogo" onclick="location.href='#/!'">
+                <h2 class="logo"><span><img src="assets/img/LogoMenara.png" alt="LogoMenara"> -</span> Menara Design</h2>
+            </div>
+        
+            <nav class="navbar">
+                <ul class="nav">
+                    <li><a href="#!home">Home</a></li>
+                    <li><a href="#!about">Nosotros</a></li>
+                    <li><a href="#!servicios">Servicios</a></li>
+                    <!-- <li><a href="#!proyectos">Proyectos</a></li> -->
+                </ul>
+            </nav>
+
+            <div class="col-div-3 contactBtn">
+                <button data-modal-id="contacto" class="contactUs">Contactanos</button>
+                <div class="menu-btn" class="fas fa-bars icons"></div>
+            </div>
+
+            <div id="contacto" class="contact eins-modal" data-options="openTransition: expandIn; openDuration:200;">
+                <div class="eins-modal-content">
+                    <div class="eins-modal-close"></div>
+                    <div class="eins-modal-content">
+                        <div class="eins-modal-close"></div>
+                    </div>
+
+                    <div class="heading">
+                        <h3>CONTACTANOS</h3>
+                    </div>
+
+                    <div class="row">
+                                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.958849357897!2d-3.281139058309254!3d40.54249828502666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424da1895fc163%3A0x4ecda584e329d023!2s!5e0!3m2!1ses!2sca!4v1662536861283!5m2!1ses!2sca" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                
+                        <form action="https://formspree.io/f/xrgdeqzq" method="POST">
+                            <input type="text"  class="box" placeholder="Name" name="name">
+                            <input type="email" class="box" placeholder="Email" name="email">
+                            <input type="number" class="box" placeholder="Phone" name="number">
+                            <textarea name="message" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                            <input type="submit" class="box btn" value="Send us a message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main ng-view>
+        
+    </main>
+
+    <footer id="foot" class="footer">
+        <div class="container">
+            <div class="col-div-3">
+
+                <h4>NOSOTROS</h4>
+                <h2 class="logo"><span><img src="assets/img/LogoMenara.png" alt="LogoMenara"> -</span> Menara Design</h2>
+                <p class="foot-us">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto itaque eos odio maiores nobis laborum temporibus? Animi, soluta cum.</p>
+                <!-- <div class="icons">
+                    <i ></i>
+                </div> -->
+            </div>
+            <div class="col-div-3">
+                <h4>NAVEGACIÓN</h4>
+                <ul class="foot-ul">
+                    <li><a href="#!home">Home</a></li>
+                    <li><a href="#!about">Nosotros</a></li>
+                    <li><a href="#!servicios">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="col-div-3">
+                <h4>SERVICIOS</h4>
+                <ul class="foot-ul">
+                    <li><a href="#!servicios">Interiores</a></li>
+                    <li><a href="#!servicios">Exposiciones</a></li>
+                    <li><a href="#!servicios">Stans</a></li>
+                </ul>
+            </div>
+            <div data-modal-id="contacto" class="col-div-3 conta">
+                <h4>CONTACTO</h4>
+                <ul class="foot-ul">
+                    <li>
+                        <a href="#"><i class="fa fa-location-dot"></i></a>
+                        <p>Visitanos <br><span>Poligono Miralcampo C/Del tejido 3 bis, nave 8</span></p>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <p>Email <br><span>menara@telefonica.net</span></p>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-phone"></i></a>                    
+                        <p>Llamanos <br><span>+34 616 49 08 08</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-licen">
+            <p>Menara Design S.L. &#169; 2022. All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./assets/node_modules/eins-modal/dist/js/eins-modal-plain.min.js"></script>
+
+</body>
+</html>

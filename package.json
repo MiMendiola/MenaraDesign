@@ -1,0 +1,22 @@
+{
+  "name": "menaradesign",
+  "version": "1.0.0",
+  "description": "menara design web site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MiMendiola/MenaraDesign.git"
+  },
+  "author": "Mendiola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiMendiola/MenaraDesign/issues"
+  },
+  "homepage": "https://github.com/MiMendiola/MenaraDesign#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}
